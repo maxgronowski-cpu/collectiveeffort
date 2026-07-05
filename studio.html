@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>studio / collectiv*effort</title>
+    <meta name="description" content="Studio collectiv*effort." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="subpage studio-page" aria-labelledby="studio-title">
+      <section class="subpage-center">
+        <a class="logo-box subpage-logo" href="index.html" aria-label="home">
+          <h1 id="studio-title" class="logo-title">
+            <img
+              src="collectiv-effort-logo.jpg"
+              alt="collectiv effort"
+              width="1702"
+              height="318"
+            />
+          </h1>
+        </a>
+
+        <div class="studio-frame">
+          <model-viewer
+            id="studio-scan"
+            src="studio-scan.glb"
+            alt="3d scan of the studio"
+            camera-controls
+            auto-rotate
+            rotation-per-second="14deg"
+            interaction-prompt="none"
+            exposure="0.85"
+            shadow-intensity="0"
+            ar
+          ></model-viewer>
+        </div>
+
+        <div class="page-details">
+          <p>mińska 65 / 245 / warsaw</p>
+          <a href="mailto:max.gronowski@gmail.com">book the appointment</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Stopka">
+      <span>c*e 2026</span>
+      <span id="clock">05/07/2026 05:59pm WAW</span>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="vendor/model-viewer.min.js"></script>
+  </body>
+</html>
